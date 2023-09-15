@@ -136,6 +136,17 @@ pesticide-(H2O)i systems for i = 1-20. Along these trajectories, we select n str
                 // Activer la section "Accueil" par défaut
         document.getElementById('home').classList.add('active');
         document.querySelector('.menu a[href="#home"]').classList.add('active');
+
+                // JavaScript pour vérifier l'ancre de l'URL et activer la section correspondante
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            const link = document.querySelector('.menu a[href="' + hash + '"]');
+            if (link) {
+                link.click();
+            } else {
+                // Si aucune ancre n'est trouvée, activer la section "Accueil" par défaut
+                document.querySelector('.menu a[href="#home"]').click();
+            }
    
     </script>
 </body>
