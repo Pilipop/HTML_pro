@@ -126,6 +126,11 @@ pesticide-(H2O)i systems for i = 1-20. Along these trajectories, we select n str
                     section.classList.remove('active');
                 });
                 document.getElementById(targetId).classList.add('active');
+                // Définir la classe "active" sur le lien actuel
+                document.querySelectorAll('.menu a').forEach(function(menuLink) {
+                    menuLink.classList.remove('active');
+                });
+                link.classList.add('active');
             });
         });
     </script>
