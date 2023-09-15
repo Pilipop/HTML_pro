@@ -130,6 +130,13 @@ pesticide-(H2O)i systems for i = 1-20. Along these trajectories, we select n str
                 document.getElementById(targetId).classList.add('active');
             });
         });
+                // JavaScript pour activer la section "Accueil" par défaut
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash === "" || hash === "#home") {
+                document.getElementById('home').classList.add('active');
+            }
+        });
     </script>
    
 </body>
